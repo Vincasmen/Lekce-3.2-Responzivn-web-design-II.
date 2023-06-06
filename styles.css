@@ -1,27 +1,67 @@
 * {
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  padding: 0.5rem;
 }
+
+/* <!-- ------------Header------------ --> */
 
 .header__styling {
   margin: auto;
   justify-content: center;
 }
 
-.img__styling {
-  width: 5%;
+.engeto__img__div {
+  text-align: center;
 }
+
+@media screen and (min-width: 480px) {
+  .header__styling {
+    font-size: 25px;
+  }
+}
+
+.img__styling {
+  width: clamp(0.5rem, 10vw, 3rem);
+  height: 5%;
+}
+
+.engeto__heading__styling {
+  margin: auto;
+  padding: 0rem;
+}
+
+/*! <!-- ------------MEDIA QUERI ------------ --> */
+@media screen and (max-width: 480px) {
+  .img__styling {
+    display: none;
+  }
+}
+/*! <!-- ------------MEDIA QUERI ------------ --> */
+
+.h2__styling {
+  margin: 0rem;
+  font-size: clamp(0.5px, 5vw, 2rem);
+  text-align: center;
+}
+
+/*! <!-- ------------MEDIA QUERI ------------ --> */
+@media screen and (min-width: 480px) {
+  .div__hero__section {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+/*! <!-- ------------MEDIA QUERI ------------ --> */
+
+/* <!-- ------------IMAGE------------ --> */
 
 .div__hero__section {
   border: 1px solid black;
-  width: 50%;
-  height: 300px;
   border-radius: 10px;
   position: relative;
 }
 
 .img__hero__section {
+  padding: 0rem;
   width: 100%;
   height: 90%;
   border-radius: 10px;
@@ -32,23 +72,67 @@
   color: white;
   border-radius: 5px;
   width: fit-content;
-  padding: 0.5rem;
   position: absolute;
   bottom: 8px;
   right: 8px;
   cursor: pointer;
 }
 
+/* <!-- ------------MAIN PARAGRAPH------------ --> */
+
+.about__heading__styling {
+  font-size: clamp(1rem, 5vw, 2rem);
+  margin: 0rem;
+  text-align: center;
+}
+
+.about__paragraph__styling {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0rem;
+}
+
+/*! <!-- ------------MEDIA QUERI ------------ --> */
+@media screen and (min-width: 480px) {
+  .about__div__styling {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+/*! <!-- ------------MEDIA QUERI ------------ --> */
+
+/* <!-- ------------FOOTER------------ --> */
+
+.about__div__styling {
+  text-align: center;
+}
+
+/* <!-- ------------FOOTER------------ --> */
+
 .footer__styling {
-  background-color: rgb(0, 106, 255);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: rgb(36, 127, 254);
+  width: 50%;
+  position: relative;
 }
 
 .footer__img__div {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__img__styling {
   margin: auto;
   justify-content: center;
-  width: 20%;
+  width: clamp(5rem, 5vw, 10rem);
+}
+
+.footer__paragraph__styling {
+  color: white;
+  text-align: center;
+  padding: 0rem;
+  margin: 0rem;
 }
